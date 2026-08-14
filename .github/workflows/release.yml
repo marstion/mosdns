@@ -34,6 +34,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: "./release/mosdns*.zip"
-          prerelease: true
+          prerelease: false
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
